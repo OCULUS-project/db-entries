@@ -1,8 +1,11 @@
 package pl.poznan.put.cie.oculus.dbentries
 
+import com.mongodb.lang.Nullable
+
 data class FactEntry (
     val head: String,
     val set: Array<String>,
+    @Nullable
     val grfIrf: GrfIrfEntry,
     val conjunction: Boolean
 ) {
