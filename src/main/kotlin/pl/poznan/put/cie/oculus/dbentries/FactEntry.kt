@@ -1,6 +1,6 @@
 package pl.poznan.put.cie.oculus.dbentries
 
-import com.mongodb.lang.Nullable
+import org.springframework.lang.Nullable
 
 data class FactEntry (
     val head: String,
