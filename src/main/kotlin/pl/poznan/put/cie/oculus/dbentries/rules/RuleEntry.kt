@@ -1,9 +1,11 @@
 package pl.poznan.put.cie.oculus.dbentries.rules
 
 import org.springframework.data.annotation.Id
+import org.springframework.data.mongodb.core.mapping.Document
 import pl.poznan.put.cie.oculus.dbentries.FactEntry
 import pl.poznan.put.cie.oculus.dbentries.GrfIrfEntry
 
+@Document
 data class RuleEntry (
         @Id
         val id: String,
