@@ -6,7 +6,7 @@ import pl.poznan.put.cie.oculus.dbentries.FactEntry
 import pl.poznan.put.cie.oculus.dbentries.GrfIrfEntry
 
 @Document
-data class RuleEntry (
+data class Rule (
         @Id
         val id: String,
         val premises: Array<FactEntry>,
@@ -17,7 +17,7 @@ data class RuleEntry (
         if (this === other) return true
         if (javaClass != other?.javaClass) return false
 
-        other as RuleEntry
+        other as Rule
 
         if (id != other.id) return false
         if (!premises.contentEquals(other.premises)) return false

@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.core.mapping.Document
 import pl.poznan.put.cie.oculus.dbentries.FactEntry
 
 @Document
-data class JobEntry (
+data class Job (
         @Id
         val id: String,
         val status: JobStatus,
@@ -16,7 +16,7 @@ data class JobEntry (
         if (this === other) return true
         if (javaClass != other?.javaClass) return false
 
-        other as JobEntry
+        other as Job
 
         if (id != other.id) return false
         if (!facts.contentEquals(other.facts)) return false
