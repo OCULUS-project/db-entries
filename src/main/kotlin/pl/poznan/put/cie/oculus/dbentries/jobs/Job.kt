@@ -3,14 +3,15 @@ package pl.poznan.put.cie.oculus.dbentries.jobs
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 import pl.poznan.put.cie.oculus.dbentries.FactEntry
+import pl.poznan.put.cie.oculus.dbentries.PremiseEntry
 
 @Document
 data class Job (
-        @Id
-        val id: String,
-        val status: JobStatus,
-        val facts: Array<FactEntry>,
-        var conclusions: Array<FactEntry>
+    @Id
+    val id: String,
+    val status: JobStatus,
+    val facts: Array<FactEntry>,
+    var conclusions: Array<PremiseEntry>
 ) {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
