@@ -4,5 +4,5 @@ class Fact (
     head: String,
     set: List<String>,
     conjunction: Boolean,
-    val grfIrf: GrfIrf
+    var grfIrf: GrfIrf
 ) : Premise(head, set, conjunction)

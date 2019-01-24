@@ -9,7 +9,7 @@ import pl.poznan.put.cie.oculus.dbentries.Premise
 data class Job (
     @Id
     val id: String,
-    val status: JobStatus,
-    val facts: List<Fact>,
+    var status: JobStatus,
+    var facts: List<Fact>,
     var conclusions: List<Premise>
 )

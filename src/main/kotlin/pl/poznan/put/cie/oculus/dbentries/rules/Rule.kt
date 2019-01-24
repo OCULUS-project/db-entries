@@ -9,7 +9,7 @@ import pl.poznan.put.cie.oculus.dbentries.Premise
 data class Rule (
         @Id
         val id: String,
-        val premises: List<Premise>,
-        val conclusion: Premise,
-        val grfIrf: GrfIrf
+        var premises: List<Premise>,
+        var conclusion: Premise,
+        var grfIrf: GrfIrf
 )
