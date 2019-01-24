@@ -1,7 +1,7 @@
 package pl.poznan.put.cie.oculus.dbentries
 
-open class PremiseEntry (
+open class Premise (
     val head: String,
-    val set: Array<String>,
+    val set: List<String>,
     val conjunction: Boolean
 )
