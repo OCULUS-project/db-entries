@@ -21,4 +21,7 @@ data class Job (
     ) {
     constructor(status: JobStatus, owner: String, patient: String, created: Instant, updated: Instant, facts: List<Fact>, conclusions: List<Premise>)
             : this(null, status, owner, patient, created, updated, facts, conclusions)
+
+    constructor(status: JobStatus, owner: String, patient: String, facts: List<Fact>, conclusions: List<Premise>)
+            : this(null, status, owner, patient, Instant.now(), Instant.now(), facts, conclusions)
 }
